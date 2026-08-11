@@ -335,7 +335,7 @@ function LibraryView({
     <div className="library-view">
       <header className="collection-header">
         <div>
-          <p className="eyebrow">Verzamelde pagina’s</p>
+          <p className="eyebrow">Freddo&apos;s Mementos</p>
           <h1>Mijn gedichten</h1>
           <p className="collection-summary">
             {snapshot.poems.length} gedichten · {recordedCount} met een stem
@@ -1294,7 +1294,7 @@ function ManageView({
           <div className="manage-card__icon"><Download aria-hidden /></div>
           <div><p className="eyebrow">Installeren</p><h2>Als app op je beginscherm</h2></div>
           <p>{installPrompt ? "Installeer de PWA voor een eigen pictogram en snelle offline toegang." : "Gebruik in het browsermenu ‘Toevoegen aan beginscherm’ als de installatieknop niet verschijnt."}</p>
-          {installPrompt && <button className="button button--secondary" type="button" onClick={onInstall}>Installeer Verzamelde pagina’s</button>}
+          {installPrompt && <button className="button button--secondary" type="button" onClick={onInstall}>Installeer Freddo&apos;s Mementos</button>}
         </section>
       </div>
       <section className="privacy-panel">
@@ -1633,8 +1633,8 @@ export default function PoetryApp() {
   if (loading) {
     return (
       <main className="loading-screen">
-        <div className="brand-mark" aria-hidden><span /><span /><span>V</span></div>
-        <p className="eyebrow">Verzamelde pagina’s</p>
+        <div className="brand-mark" aria-hidden><span /><span /><span /></div>
+        <p className="eyebrow">Freddo&apos;s Mementos</p>
         <h1>Je privéarchief wordt geopend</h1>
         <div className="loading-line" role="status"><span /></div>
       </main>
@@ -1650,8 +1650,8 @@ export default function PoetryApp() {
       <input ref={fileInputRef} className="sr-only" type="file" accept=".json,.zip,application/json,application/zip" onChange={handleFileInput} />
       <aside className="app-sidebar">
         <button className="brand" type="button" onClick={() => navigateTo("library")} aria-label="Naar mijn gedichten">
-          <span className="brand-mark" aria-hidden><span /><span /><span>V</span></span>
-          <span><strong>Verzamelde</strong><small>pagina’s</small></span>
+          <span className="brand-mark" aria-hidden><span /><span /><span /></span>
+          <span><strong>Freddo&apos;s</strong><small>Mementos</small></span>
         </button>
         <nav className="desktop-nav" aria-label="Hoofdnavigatie">
           {navigation.map((item) => {
@@ -1667,8 +1667,8 @@ export default function PoetryApp() {
       </aside>
       <header className="mobile-header">
         <button className="brand" type="button" onClick={() => navigateTo("library")} aria-label="Naar mijn gedichten">
-          <span className="brand-mark" aria-hidden><span /><span /><span>V</span></span>
-          <span><strong>Verzamelde pagina’s</strong><small>privéarchief</small></span>
+          <span className="brand-mark" aria-hidden><span /><span /><span /></span>
+          <span><strong>Freddo&apos;s Mementos</strong><small>privéarchief</small></span>
         </button>
         <button className="icon-button" type="button" aria-label="Importeren en back-up" onClick={() => navigateTo("manage")}><MoreHorizontal size={22} aria-hidden /></button>
       </header>

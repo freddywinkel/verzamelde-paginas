@@ -34,8 +34,8 @@ def main() -> None:
 
     draw.text((76, 104), "PRIVÉ  ·  OFFLINE  ·  VAN JOU", font=mono, fill=rust)
     draw.rounded_rectangle((76, 144, 173, 150), radius=3, fill=rust)
-    draw.text((72, 180), "Verzamelde", font=display, fill=ink)
-    draw.text((72, 258), "pagina’s", font=display, fill=ink)
+    draw.text((72, 180), "Freddo's", font=display, fill=ink)
+    draw.text((72, 258), "Mementos", font=display, fill=ink)
     draw.text((77, 371), "Een privéarchief voor gedichten,", font=body, fill=muted)
     draw.text((77, 407), "versies en je eigen stem.", font=body, fill=muted)
 

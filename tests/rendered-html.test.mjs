@@ -12,17 +12,17 @@ async function render(pathname = "/") {
   );
 }
 
-test("server-renders the Dutch Collected Pages shell", async () => {
+test("server-renders the branded Dutch application shell", async () => {
   const response = await render();
   assert.equal(response.status, 200);
   assert.match(response.headers.get("content-type") ?? "", /^text\/html\b/i);
 
   const html = await response.text();
   assert.match(html, /<html[^>]+lang="nl"/i);
-  assert.match(html, /<title>Verzamelde pagina(?:’|&#x2019;)s<\/title>/i);
+  assert.match(html, /<title>Freddo(?:'|&#x27;)s Mementos<\/title>/i);
   assert.match(html, /rel="manifest"[^>]+href="\/manifest\.webmanifest"/i);
   assert.match(html, /Je priv(?:é|&#xe9;)archief wordt geopend/i);
-  assert.match(html, /Verzamelde pagina(?:’|&#x2019;)s/i);
+  assert.match(html, /Freddo(?:'|&#x27;)s Mementos/i);
   assert.doesNotMatch(html, /codex-preview|Your site is taking shape|react-loading-skeleton/i);
 });
 
@@ -30,6 +30,6 @@ test("shortcut routes still return the installable application shell", async () 
   for (const view of ["write", "record", "manage"]) {
     const response = await render(`/?view=${view}`);
     assert.equal(response.status, 200);
-    assert.match(await response.text(), /Verzamelde pagina/i);
+    assert.match(await response.text(), /Freddo(?:'|&#x27;)s Mementos/i);
   }
 });

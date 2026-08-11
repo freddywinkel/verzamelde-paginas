@@ -33,7 +33,7 @@ interface BackupManifest {
   format: typeof BACKUP_FORMAT;
   version: typeof DATA_VERSION;
   exportedAt: string;
-  app: "Verzamelde pagina's";
+  app: "Freddo's Mementos";
   counts: {
     poems: number;
     revisions: number;
@@ -213,7 +213,7 @@ export async function createBackup(snapshot: LibrarySnapshot): Promise<{
     format: BACKUP_FORMAT,
     version: DATA_VERSION,
     exportedAt,
-    app: "Verzamelde pagina's",
+    app: "Freddo's Mementos",
     counts: {
       poems: snapshot.poems.length,
       revisions: snapshot.revisions.length,
@@ -246,7 +246,7 @@ export function downloadBlob(blob: Blob, filename: string): void {
 async function parsePrivateImport(value: unknown): Promise<ImportReport> {
   const payload = value as Partial<PrivateImportPackage>;
   if (payload.format !== PRIVATE_IMPORT_FORMAT || payload.version !== DATA_VERSION) {
-    throw new Error("Dit is geen geldig privé-importbestand voor Verzamelde pagina's.");
+    throw new Error("Dit is geen geldig privé-importbestand voor Freddo's Mementos.");
   }
   if (!Array.isArray(payload.poems) || !payload.poems.every(isPoem)) {
     throw new Error("De gedichtenlijst in het importbestand is beschadigd.");
