@@ -1,0 +1,52 @@
+{
+  "id": "./",
+  "name": "Verzamelde pagina’s",
+  "short_name": "Pagina’s",
+  "description": "Een privé, offline archief voor gedichten, versies en eigen stemopnames.",
+  "lang": "nl",
+  "dir": "ltr",
+  "start_url": "./",
+  "scope": "./",
+  "display": "standalone",
+  "display_override": ["window-controls-overlay", "standalone", "minimal-ui"],
+  "orientation": "any",
+  "background_color": "#e8ddcb",
+  "theme_color": "#e8ddcb",
+  "categories": ["books", "lifestyle", "productivity"],
+  "icons": [
+    {
+      "src": "./icons/icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "./icons/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "./icons/icon-maskable-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "maskable"
+    }
+  ],
+  "shortcuts": [
+    {
+      "name": "Schrijven",
+      "short_name": "Schrijven",
+      "description": "Open de schrijfkamer",
+      "url": "./?view=write",
+      "icons": [{ "src": "./icons/icon-192.png", "sizes": "192x192" }]
+    },
+    {
+      "name": "Opnemen",
+      "short_name": "Opnemen",
+      "description": "Open het stemmenarchief",
+      "url": "./?view=record",
+      "icons": [{ "src": "./icons/icon-192.png", "sizes": "192x192" }]
+    }
+  ]
+}
