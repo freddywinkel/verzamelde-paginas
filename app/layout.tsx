@@ -12,22 +12,22 @@ import "@fontsource/newsreader/latin-400-italic.css";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  applicationName: "Verzamelde pagina’s",
+  applicationName: "Freddo's Mementos",
   title: {
-    default: "Verzamelde pagina’s",
-    template: "%s · Verzamelde pagina’s",
+    default: "Freddo's Mementos",
+    template: "%s · Freddo's Mementos",
   },
   description: "Een privé, offline archief voor gedichten, versies en eigen stemopnames.",
   openGraph: {
     type: "website",
     locale: "nl_NL",
-    title: "Verzamelde pagina’s",
+    title: "Freddo's Mementos",
     description: "Een privé, offline archief voor gedichten, versies en eigen stemopnames.",
-    images: [{ url: "/og.jpg", width: 1200, height: 630, alt: "Verzamelde pagina’s op een warme schrijftafel" }],
+    images: [{ url: "/og.jpg", width: 1200, height: 630, alt: "Freddo's Mementos op een warme schrijftafel" }],
   },
   twitter: {
     card: "summary_large_image",
-    title: "Verzamelde pagina’s",
+    title: "Freddo's Mementos",
     description: "Een privé, offline archief voor gedichten, versies en eigen stemopnames.",
     images: ["/og.jpg"],
   },
@@ -35,15 +35,15 @@ export const metadata: Metadata = {
   appleWebApp: {
     capable: true,
     statusBarStyle: "default",
-    title: "Pagina’s",
+    title: "Mementos",
   },
   formatDetection: { telephone: false },
   icons: {
     icon: [
-      { url: "/icons/favicon-32.png", sizes: "32x32", type: "image/png" },
-      { url: "/icons/icon-192.png", sizes: "192x192", type: "image/png" },
+      { url: "/icons/favicon-v2-32.png", sizes: "32x32", type: "image/png" },
+      { url: "/icons/icon-v2-192.png", sizes: "192x192", type: "image/png" },
     ],
-    apple: [{ url: "/icons/apple-touch-icon.png", sizes: "180x180", type: "image/png" }],
+    apple: [{ url: "/icons/apple-touch-icon-v2.png", sizes: "180x180", type: "image/png" }],
   },
 };
 

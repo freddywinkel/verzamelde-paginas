@@ -1,4 +1,4 @@
-# Verzamelde pagina’s
+# Freddo's Mementos
 
 Een privé, local-first PWA voor een persoonlijke dichtbundel. De app kan gedichten lezen en doorzoeken, nieuwe teksten schrijven, versies bewaren, meerdere stemopnames per gedicht beheren en een complete ZIP-back-up maken.
 
